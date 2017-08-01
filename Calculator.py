@@ -134,7 +134,6 @@ class Calc(QMainWindow):
             i.setStyleSheet("color:red;")
         for i in operators[2:]:
             i.clicked.connect(self.operator)
-            
         for i in others:
             i.setStyleSheet("color:red;")
 
@@ -227,7 +226,7 @@ class Calc(QMainWindow):
         num = float(self.line.text())
         num = -num
         self.line.setText(str(num))
-       
+
     def CE(self):
         self.line.backspace()
 
